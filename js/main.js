@@ -92,7 +92,7 @@
     $(".typed").typed({
         strings: ["I am  Denis", "A Python developer"],
         typeSpeed: 100,
-        backDelay: 900,
+        backDelay: 1000,
         // loop
         loop: true
     });

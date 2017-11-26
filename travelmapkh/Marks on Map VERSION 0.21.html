@@ -31,22 +31,25 @@
           zoom: 16,
           center: {lat: 49.929768, lng: 36.391117}
         });
-
         setMarkers(map);
       }
-
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other.
       var beaches = [
-        ['Historical Museum', 44.992672, 36.230984, 1],
-        ['Uspensky Cathedral', 49.989818, 36.230781, 2],
-        ['Ilya Mechnikov Statue', 49.993160, 36.234033, 3],
-        ['Mirror Stream', 49.998726, 36.234594, 4],
-        ['Taras Shevchenko', 50.001129, 36.234086, 5],
-        ['Museum of Advertisment', 49.982002, 36.238722, 6],
-        ['Pionesrky Park', 49.984421, 36.249045, 7],
-        ['Metalist', 49.980823, 36.231675, 8],
-        ['Marshal Zhukov', 49.958692, 36.318293, 9]
+        ['Blagoveshensky Cathedral', 44.990562, 36.224041, 1],
+        ['Hero of Vietnam', 49.946970, 36.283087, 2],
+        ['Profitable house Zamyatin', 49.985976, 36.234720, 3],
+        ['Myrrh-Majestic Church', 49.998472, 36.235901, 4],
+        ['Mirror Stream', 49.998691, 36.234482, 5],
+        ['Cascade Fountain', 49.999691, 36.226855, 6],
+        ['Holy Protection Monastery', 49.991744, 36.228801, 7],
+        ['Lyudmila Gurchenko', 49.995537, 36.230803, 8],
+        ['Karazin Monument', 50.004623, 36.227881, 9],
+        ['Monument of the 50th parallel', 50.000000, 36.233897, 10],
+        ['Monument to Alexey Alchevsky', 49.998910, 36.236846, 11],
+        ['Monument to Archangel Michael', 50.000261, 36.233358,12],
+        ['Monument to Architect Beketov', 50.000322, 36.234774, 13],
+        ['Monument to sovereignty Ukraine', 50.004068, 36.231993, 14]
       ];
 
       function setMarkers(map) {
@@ -58,7 +61,7 @@
         // Origins, anchor positions and coordinates of the marker increase in the X
         // direction to the right and in the Y direction down.
         var image = {
-          url: 'https://yandex.ru/maps/favicon.png',
+          url: 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-32.png',
           // This marker is 20 pixels wide by 32 pixels high.
           size: new google.maps.Size(32, 32),
           // The origin for this image is (0, 0).
@@ -84,10 +87,39 @@
             zIndex: beach[3]
           });
         }
+
+        /*var infoWindow = new google.maps.InfoWindow({map: map});
+
+        if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position)){
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, InfoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }*/
       }
+
+    /*  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesb\'t support geolocation.');
+
+      }*/
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQQOZRsLPam3XJkhG_5Pn-5TTnSfFevs&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZyFqG9Da_aN4VcPBip36DauhLgFDkcb0&callback=initMap">
     </script>
   </body>
 </html>

@@ -10,4 +10,4 @@
 
 ## Contributing
 
-## Lcensing
+## Licensing

@@ -5,7 +5,7 @@ function initMap() {
           center: {lat: -34.397, lng: 150.644},
           zoom: 14
         });
-         
+
         var infoWindow = new google.maps.InfoWindow({map: map});
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
@@ -16,16 +16,16 @@ function initMap() {
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-              console.log(position.coords.latitude + " " + position.coords.longitude);
+            //  console.log(position.coords.latitude + " " + position.coords.longitude);
             infoWindow.setPosition(pos);
-            
+
             infoWindow.setContent('<div><img src="images/sq.png" alt=""></div>');
-            
+
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });}, 500);
-        } 
-        
+        }
+
         var markers = [];
         for(var i = 0; i < arrPlaces.length; i++){
             markers[i] = new google.maps.Marker({
@@ -35,16 +35,19 @@ function initMap() {
             map: map
         });
         }
-    
+
         console.log("Markers were seting");
-          
-          
+
+
       };
-        
+
       function toggleBounce() {
         if (marker.getAnimation() !== null) {
           marker.setAnimation(null);
         } else {
           marker.setAnimation(google.maps.Animation.BOUNCE);
         }
+
+        console.log(marker.lat + " " + marker.lng);
+
       }

@@ -20,3 +20,4 @@ Please make sure the release file is unpacked under a Web-accessible directory. 
 ## Configuration
 
 ## Licensing
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

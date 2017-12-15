@@ -19,6 +19,4 @@ Please make sure the release file is unpacked under a Web-accessible directory. 
 
 ## Configuration
 
-## Contributing
-
 ## Licensing

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adminka Google Travel Maps</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <p>Добавить место:</p>
+        <form action="">
+           <br>
+            <label for="namePlace">Имя: </label><input type="text" id="namePlace"><br><br>
+            <label for="descriptionPlace">Описание: </label><input type="text" id="descriptionPlace"><br><br>
+            <label for="latPlace">Координата lat: </label><input type="text" id="latPlace"><br><br>
+            <label for="langPlace">Координата lang: </label><input type="text" id="langPlace" ><br><br>
+            <input type="button" value="Добавить" id="addButton" onclick="ButtonClick()">
+            <br><br>
+        </form>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="JS/mainPlaces.js"></script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    align-items: center;
 }
 .container{
     margin: auto;
     width: 1000px;
-    font-family: 'Oswald', sans-serif;
 }
 form{
-  font-family: 'Oswald', sans-serif;
+  background-color: #ffffff;
 }
 label{
     font-size: 20px;
@@ -17,7 +15,7 @@ label{
 input{
     font-size: 20px;
     width: 50%;
-    font-family: 'Comfortaa', bold;
+    
 }
 p{
     font-size: 20px;

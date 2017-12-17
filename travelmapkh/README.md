@@ -7,8 +7,10 @@
 
 Please make sure the release file is unpacked under a Web-accessible directory. You shall see the following files and directories:
 
+      CHANGELOG            describing changes in every Travel Map KH release
       LICENSE              license of Travel Map KH
       README               this file
+      UPGRADE              upgrading instructions
 
 
 ## Developing

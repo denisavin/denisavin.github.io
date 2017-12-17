@@ -21,7 +21,7 @@ function initMap() {
            for(var i = 0; i < arrPlaces.length; i++){
             console.log(positionLat + " " + positionLng);
             var RadiusTmp =  Math.sqrt(Math.pow(arrPlaces[i].lat - positionLat, 2) +  Math.pow(arrPlaces[i].lang - positionLng,2));
-            if(RadiusTmp > 10){
+            if(RadiusTmp > Radius){
                     markers[i].setMap(null);
                }
         }   

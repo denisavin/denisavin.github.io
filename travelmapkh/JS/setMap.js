@@ -45,7 +45,7 @@ function initMap() {
         for(var i = 0; i < arrPlaces.length; i++){
             markers[i] = new google.maps.Marker({
             position: {lat: arrPlaces[i].lat, lng: arrPlaces[i].lang},
-            draggable: true,
+            draggable: false,
             id: (i).toString(),
             animation: google.maps.Animation.DROP,
             map: map

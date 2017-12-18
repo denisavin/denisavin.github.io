@@ -1,6 +1,6 @@
 var arrPlaces = [];
 
-arrPlaces = [{name: "Holiday", lat: 49.973870503822106, lang: 36.25751125139902, type: "Боулиyнг, Ресторан", isVisit: false},
+arrPlaces = [{name: "Holiday", lat: 49.973870503822106, lang: 36.25751125139902, type: "Боулинг, Ресторан", isVisit: false},
             {name: "Стадион Металист", lat: 49.98087748687755, lang: 36.26154797596644, type: "Стадион", isVisit: false},
             {name: "Памятник влюбленным", lat: 49.99837862686159, lang: 36.23985091669272, type: "Памятник", isVisit: false},
             {name: "Памятник А.С. Пушкину", lat: 49.99471423985541, lang: 36.23516107423018, type: "Памятник", isVisit: false},

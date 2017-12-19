@@ -1,4 +1,5 @@
-var Radius = Math.sqrt(Math.pow(49.9713864 - 49.974199, 2) +  Math.pow(36.2583595 - 36.258379,2));//0.002812667596782849
+//var Radius = Math.sqrt(Math.pow(49.9713864 - 49.974199, 2) +  Math.pow(36.2583595 - 36.258379,2));//0.002812667596782849
+var Radius = 0.0105224457;
 var positionLat, positionLng;
 function initMap() {
        var map = new google.maps.Map(document.getElementById('map'), {
@@ -44,7 +45,7 @@ function initMap() {
         for(var i = 0; i < arrPlaces.length; i++){
             markers[i] = new google.maps.Marker({
             position: {lat: arrPlaces[i].lat, lng: arrPlaces[i].lang},
-            draggable: true,
+            draggable: false,
             id: (i).toString(),
             animation: google.maps.Animation.DROP,
             map: map

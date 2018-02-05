@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans";
+    font-family: 'Londrina Outline', cursive;
     margin-top: 300px;
     text-align: center;
     color: white;
@@ -8,4 +8,8 @@ body {
 #clock {
     font-weight: 300;
     font-size: 120px;
+}
+
+#color {
+  font-size: 40px;
 }

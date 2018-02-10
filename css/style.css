@@ -63,6 +63,7 @@ body {
 }
 a {
   color: #2f2f2f;
+  font-size: 10px;
   text-decoration: none;
   transition: ease .6s;
   -webkit-transition: ease .6s;
@@ -133,7 +134,7 @@ img { max-width: 100%; }
   position: absolute;
   bottom: -20px;
   height: 3px;
-  background: #DEDEDE;
+  background: #ff5252;
   width: 28px;
   left: 0;
 }
@@ -144,7 +145,7 @@ img { max-width: 100%; }
   margin: 0 auto;
   margin-top: 20px;
   height: 3px;
-  background: #DEDEDE;
+  background: #ff5252;
   width: 28px;
   left: 0;
 }
@@ -337,7 +338,7 @@ img { max-width: 100%; }
 }
 .menu,
 .menu-list {
-  height: 100%;     
+  height: 100%;
   overflow-x: auto;
 }
 .menu-list {
@@ -399,7 +400,7 @@ img { max-width: 100%; }
   display: block;
   width: 0;
   height: 2px;
-  background: #ffffff;
+  background: #ff5252;
   -webkit-transition: width .3s ease;
   transition: width .3s ease;
   position: absolute;
@@ -488,13 +489,13 @@ p {
   line-height: 14px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #cccccc;
+  color: #ff5252;
 }
 .company {
   font-size: 12px;
   line-height: 14px;
-  border: 1px solid #ececec;
-  color: #cccccc;
+  border: 1px solid #ff5252;
+  color: #ff5252;
   padding:8px 10px;
   border-radius: 6px;
   display: inline-block;
@@ -506,14 +507,14 @@ p {
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
   background: url('../images/hero1.jpg');
-  -webkit-background-size: cover;
+  /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100%;*/
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
   display: block;
 }
 .wrap-hero-content{
@@ -571,7 +572,7 @@ p {
 .mouse-icon .scroll {
   position: relative;
   border-radius: 10px;
-  background: #2f2f2f;
+  background: #ff5252;
   width: 4px;
   height: 8px;
   top: 4px;
@@ -718,7 +719,7 @@ ul.portfolio-image li .desc{
   content: " ";
   width: 100%;
   height: 3px;
-  background: #818181;
+  background: #ff5252;
   -webkit-transform: scaleX(0);
   transition: all 0.2s ease;
 }
@@ -733,7 +734,7 @@ ul.portfolio-image li .desc{
   -webkit-transform-origin: 100% 0;
 }
 .wrap-card:hover {
-  box-shadow: 20px 20px 0px #818181;
+  box-shadow: 20px 20px 0px #ff5252;
   -webkit-transform: translateY(-10px) translateX(-10px);
   transition: all 0.2s ease 0.4s;
 }
@@ -754,7 +755,7 @@ ul.portfolio-image li .desc{
   content: " ";
   width: 3px;
   height: 100%;
-  background: #818181;
+  background: #ff5252;
   -webkit-transform: scaleY(0);
   transition: all 0.2s ease 0.2s;
 }
@@ -921,6 +922,7 @@ ul.portfolio-image li .desc{
   position: relative;
   padding: 0;
   margin: 0;
+  max-width: 768px;
   min-height: 660px;
   width: 100%;
   height: 100%;
@@ -940,7 +942,7 @@ ul.portfolio-image li .desc{
   transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%); 
+  -ms-transform: translateX(-50%);
 }
 
 .wrap-about .w-content td{
@@ -1217,17 +1219,17 @@ ul.portfolio-image li .desc{
   background-color: #f6f6f6;
   position: relative;
   margin-bottom: 60px;
-  padding: 2px;
+  padding: 0px;
   box-sizing: border-box;
 }
 .skillst .count-bar {
   width: 100%;
-  height: 5px;
+  height: 10px;
   width: 0px;
   position: relative;
 }
-.skillst .count-bar {background-color: #818181;}
-.skillst .count-bar span{ font-size: 12px;}
+.skillst .count-bar {background-color: #ff5252;}
+.skillst .count-bar span{ font-size: 10px;}
 .skillst .title {
   position: absolute;
   line-height: 25px;

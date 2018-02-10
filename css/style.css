@@ -289,8 +289,8 @@ img { max-width: 100%; }
 .menu-button:hover {opacity: 0.6;}
 /* Close Button */
 .close-button {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   position: absolute;
   right: 1em;
   top: 1em;

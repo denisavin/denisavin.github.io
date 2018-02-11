@@ -90,16 +90,16 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["I am  Denis", "A Python developer"],
+        strings: ["I am  Denis", "A JS developer", "r now"],
         typeSpeed: 100,
-        backDelay: 1000,
+        backDelay: 1100,
         // loop
         loop: true
     });
 
     //owl carousel
     $('.owl-carousel').owlCarousel({
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: 4000, //Set AutoPlay to 3 seconds
 
       items : 1,
       itemsDesktop : [1199,1],

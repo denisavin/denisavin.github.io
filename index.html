@@ -392,15 +392,16 @@
                     <div class="wrap-article">
                       <img alt="blog-3" class="img-circle text-center" src="images/blog-3.jpg">
                       <p class="subtitle fancy">
-                        <span>08/03/2015</span>
+                        <span>26/11/2017</span>
                       </p>
                       <a href="#">
                         <h3 class="title">
-                          Somewhere Place
+                          New Project
                         </h3>
                       </a>
                       <p class="content-blog">
-
+                        Start coding new project using Google Maps API
+                        <a href="denisavin.github.io/travelmapkh">Travel Map KH</a>
                       </p>
                     </div>
                   </div>
@@ -422,23 +423,39 @@
                   <span>Contact</span>
                 </h3>
                 <p class="content-detail">
-                  ...
+                  Drop me a line
                 </p>
 
               </div>
               <div class="col-md-9 content-right">
                 <form>
                   <div class="group">
-                    <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Name</label>
+                    <input required="" type="text" name="name"><span class="highlight"></span><span class="bar"></span><label>Name</label>
                   </div>
                   <div class="group">
-                    <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
+                    <input required="" type="email" name="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
                   </div>
                   <div class="group">
-                    <textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
+                    <textarea required="" name="message"></textarea><span class="highlight"></span><span class="bar"></span><label>Message</label>
                   </div>
                   <input id="sendMessage" name="sendMessage" type="submit" value="Send Message">
                 </form>
+                <script type="text/javascript">
+                  $(document).ready(function(){
+                    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+                      var form_data = $(this).serialize(); //собераем все данные из формы
+                      $.ajax({
+                        type: "POST", //Метод отправки
+                        url: "send.php", //путь до php фаила отправителя
+                        data: form_data,
+                        success: function() {
+                         //код в этом блоке выполняется при успешной отправке сообщения
+                         alert("Your message is send!");
+                        });
+                      });
+                    });
+                  });
+                </script>
               </div>
             </div>
           </div>

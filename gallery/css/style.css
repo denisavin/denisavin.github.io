@@ -59,7 +59,7 @@ body {
   color: #2f2f2f;
   font-size: 16px;
   line-height: 1.7;
-  background-color: #fff;
+  background-color: #ABABAB;
 }
 a {
   color: #2f2f2f;
@@ -202,7 +202,7 @@ img { max-width: 100%; }
   width: 100%;
   height: 50px;
   opacity: 0.8;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   border-bottom: 1px solid #f1f1f1;
@@ -926,87 +926,26 @@ ul.portfolio-image li .desc{
   min-height: 650px;
   display: inline-block;
   width: 100%;
+  height: auto;
 }
-.gl-1 {
-  background: url('/gallery/images/gl-1.jpg');
+.gl-about-1 {
+  background: url('../images/gl-1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
   padding: 0;
   margin: 0;
+  max-width: 768px;
+  min-height: 660px;
   width: 100%;
   height: 100%;
+  float: left;
+  z-index: 1;
 }
-
-.gl-2{
-  background: url('../images/gl-2.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-3{
-  background: url('../images/gl-3.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-4{
-  background: url('./images/gl-4.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-5{
-  background: url('../images/gl-5.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-6{
-  background: url('../images/gl-6.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-7{
+.gl-about-7 {
   background: url('../images/gl-7.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1016,23 +955,14 @@ ul.portfolio-image li .desc{
   position: relative;
   padding: 0;
   margin: 0;
+  max-width: 768px;
+  min-height: 660px;
   width: 100%;
   height: 100%;
+  float: left;
+  z-index: 1;
 }
-.gl-8{
-  background: url('../images/gl-8.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-.gl-9{
+.gl-about-9 {
   background: url('../images/gl-9.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1042,15 +972,121 @@ ul.portfolio-image li .desc{
   position: relative;
   padding: 0;
   margin: 0;
+  max-width: 768px;
+  min-height: 660px;
   width: 100%;
   height: 100%;
+  float: left;
+  z-index: 1;
+}
+
+.gl-about-2  {
+  background: url('../images/gl-2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.gl-about-6  {
+  background: url('../images/gl-6.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.gl-about-3 {
+  background: url('../images/gl-3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.gl-about-5 {
+  background: url('../images/gl-5.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.gl-about-4 {
+  background: url('../images/gl-4.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.gl-about-8 {
+  background: url('../images/gl-8.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-width: 768px;
+  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  float: right;
 }
 
 .wrap-about {
   height: 100%;
   width: 100%;
   position: relative;
-
+  display: block;
   min-height: 480px;
 }
 .wrap-about .w-content{
@@ -1075,7 +1111,7 @@ ul.portfolio-image li .desc{
   padding-right: 15px;
 }
 .wrap-about .w-content tr{
-  height: 35px;
+  height: 0;
 }
 .wrap-about .head-about {
   font-size: 13px;
@@ -1084,7 +1120,7 @@ ul.portfolio-image li .desc{
   font-weight: 300;
 }
 .wrap-about .name {
-  margin: 40px 0 20px 0;
+  margin: 0 0 0 0;
   font-size: 14px;
 }
 /*---------- g. contact -----------*/
@@ -1325,6 +1361,8 @@ ul.portfolio-image li .desc{
   background: #2f2f2f;
   padding: 20px 0;
   color: #636363;
+  bottom: 0;
+  flex: 0 0 auto;
 }
 
 .copyright a {

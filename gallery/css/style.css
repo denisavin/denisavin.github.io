@@ -1432,3 +1432,97 @@ ul.portfolio-image li .desc{
 }
 .skillst .count-bar .count { background-color: #818181;}
 .skillst .count-bar .count span:after { border-top: 4px solid #818181;}
+
+
+/* ---------------------------------------------- /*
+ * Slider for imsges BETA
+/* ---------------------------------------------- */
+
+#block-for-slider {
+    width: 100%;
+    margin: 0;
+
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 9);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper div, #slidewrapper div {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/9);
+    float: right;
+}
+
+.slide-img {
+    width: 100%;
+    text-align: center;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
